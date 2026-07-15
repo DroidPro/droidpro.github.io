@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <title>dylv</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/6c5929dddf.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <liquid-glass
+                    responsive="true"
+                    vh-height="8.368"
+                    vw-width="98.95"
+                    bezel-width-percent="25"
+                    specular-opacity="0.3"
+                    flex-center="false"
+                    ><div class="header-content">
+                        <h1>dylv</h1>
+                        <div class="header-buttons">
+                            <liquid-btn
+                                data-panel="about"
+                                force-fallback="true"
+                                font-size-percent="57.6"
+                                responsive="true"
+                                vh-height="5.23"
+                                vw-width="7.845"
+                                >About</liquid-btn
+                            >
+                            <liquid-btn
+                                data-panel="repo"
+                                force-fallback="true"
+                                font-size-percent="57.6"
+                                responsive="true"
+                                vh-height="5.23"
+                                vw-width="7.845"
+                                >Repo</liquid-btn
+                            >
+                            <liquid-btn
+                                id="current"
+                                data-panel="home"
+                                force-fallback="true"
+                                font-size-percent="57.6"
+                                responsive="true"
+                                vh-height="5.23"
+                                vw-width="7.845"
+                                >Home</liquid-btn
+                            >
+                        </div>
+                    </div></liquid-glass
+                >
+                <button
+                    id="hamburger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" aria-hidden="true">
+                <liquid-glass
+                    id="mobile-menu-card"
+                    responsive="true"
+                    vw-width="92"
+                    vh-height="22"
+                    radius-percent="16"
+                    specular-opacity="0.4"
+                    flex-center="false"
+                    bezel-width-percent="16"
+                >
+                    <div class="mobile-menu-inner">
+                        <button class="mobile-nav-btn" data-panel="home">
+                            Home
+                        </button>
+                        <div class="mobile-menu-sep"></div>
+                        <button class="mobile-nav-btn" data-panel="about">
+                            About
+                        </button>
+                        <div class="mobile-menu-sep"></div>
+                        <button class="mobile-nav-btn" data-panel="repo">
+                            Repo
+                        </button>
+                    </div>
+                </liquid-glass>
+            </div>
+        </header>
+
+        <main>
+            <div class="bento-container" id="bento">
+                <liquid-glass
+                    id="main-card"
+                    flex-center="false"
+                    specular-opacity="0.5"
+                    responsive="true"
+                    font-size-percent="2.666666666666667"
+                    vw-width="44.45606694560669"
+                    vh-height="62.76150627615063"
+                    radius-percent="5"
+                    refraction-scale="3"
+                    blur="15"
+                    bezel-width-percent="5"
+                >
+                    <div class="panel-wrapper">
+                        <!-- home panel -->
+                        <div
+                            class="content hero-content panel active"
+                            id="panel-home"
+                        >
+                            <div class="hero-body">
+                                <b>Hey,</b>
+                                <h1 class="brand-title">
+                                    I'm
+                                    <span style="color: #00ff80">dylv</span>
+                                </h1>
+                                <h3 class="brand-sub">
+                                    - random ass 1x year old
+                                </h3>
+                                <div class="space-maker"></div>
+                                <h2>What I do</h2>
+                                <br />
+                                <ul class="what-i-do">
+                                    <li>
+                                        develop things, most of the time for
+                                        personal use
+                                    </li>
+                                    <li>
+                                        stuff like hackintoshing, iOS
+                                        jailbreaking, reverse engineering, etc
+                                    </li>
+                                    <li>live a life</li>
+                                </ul>
+                            </div>
+
+                            <div class="hero-footer">
+                                <div class="line-container">
+                                    <div class="line"></div>
+                                </div>
+                                <p class="footer-msg">
+                                    <strong
+                                        >Use the buttons on the top bar to learn
+                                        more!</strong
+                                    >
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- about panel -->
+                        <div
+                            class="content hero-content panel"
+                            id="panel-about"
+                        >
+                            <div class="hero-body">
+                                <div class="tc-sep">
+                                    <div class="line-sep-container">
+                                        <div class="line-sep"></div>
+                                    </div>
+                                    <i
+                                        style="font-size: 2.1em"
+                                        class="fa-solid fa-circle-info"
+                                    ></i>
+                                </div>
+                                <h1 class="brand-title">About me</h1>
+                                <h3 class="brand-sub">
+                                    - some more info about myself
+                                </h3>
+                                <br />
+                                <h2 style="color: #00ff80">Greetings,</h2>
+                                <br />
+                                <p
+                                    style="
+                                        font-size: 1.674vh;
+                                        line-height: 1.3em;
+                                    "
+                                >
+                                    I'm <strong>Th. Hải</strong> but you can
+                                    call me
+                                    <strong style="color: #00ff80">dylv</strong
+                                    >. Lives in
+                                    <strong>Hanoi, Vietnam</strong>
+                                    and have been interested in tech since the
+                                    Covid Pandemic, but only 2 years later I
+                                    offically stop being some random skid and
+                                    learn actual coding myself.
+                                </p>
+                                <br />
+                                <h2 style="color: #00ff80">
+                                    More things to say,
+                                </h2>
+                                <br />
+                                <ul class="about-list">
+                                    <li>
+                                        <span style="color: #00ff80"
+                                            >Mint green</span
+                                        >
+                                        is my favorite color. (this website
+                                        green as hell)
+                                    </li>
+                                    <li>
+                                        My birthday is on the 10th of August and currently under 16.
+                                    </li>
+                                    <li>I main American English.</li>
+                                    <li>
+                                        I usually code for helping myself and
+                                        rarely make stuff for the public.
+                                    </li>
+                                    <li>
+                                        Using an <code>i5-3570k</code> and
+                                        <code>GTX 1050 Ti</code> in the big 26.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- repo panel -->
+                        <div class="content hero-content panel" id="panel-repo">
+                            <div class="hero-body">
+                                <div class="tc-sep">
+                                    <div class="line-sep-container">
+                                        <div class="line-sep"></div>
+                                    </div>
+                                    <i
+                                        style="font-size: 2.1em"
+                                        class="fa-solid fa-box-open"
+                                    ></i>
+                                </div>
+                                <h1 class="brand-title">iOS repo</h1>
+                                <br />
+                                <h2 style="color: #00ff80">
+                                    the hell is this?
+                                </h2>
+                                <br />
+                                <p style="font-size: 1.674vh">
+                                    If you don't understand, that's fine. This
+                                    is my iOS jailbreak repository, add this
+                                    repo to your package manager to see my
+                                    useless tweaks.
+                                </p>
+                                <div class="line-container">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="add-to-pm">
+                                    <liquid-btn
+                                        onclick="
+                                            window.location.href =
+                                                'sileo://source/https://winaviation.github.io/repo'
+                                        "
+                                        force-fallback="true"
+                                        responsive="true"
+                                        vw-width="39.22594142259414"
+                                        vh-height="6.276150627615063"
+                                        font-size-percent="48"
+                                    >
+                                        <span class="btn-content-wrapper">
+                                            <img
+                                                class="pm-logo"
+                                                src="/repo/sileo.png"
+                                            />
+                                            Add to&thinsp;<b
+                                                style="color: #20c6be"
+                                                >Sileo</b
+                                            >
+                                        </span>
+                                    </liquid-btn>
+                                    <liquid-btn
+                                        onclick="
+                                            window.location.href =
+                                                'zbra://sources/add/https://winaviation.github.io/repo'
+                                        "
+                                        force-fallback="true"
+                                        responsive="true"
+                                        vw-width="39.22594142259414"
+                                        vh-height="6.276150627615063"
+                                        font-size-percent="48"
+                                    >
+                                        <span class="btn-content-wrapper">
+                                            <img
+                                                class="pm-logo"
+                                                src="/repo/zebra.png"
+                                            />
+                                            Add to&thinsp;<b
+                                                style="color: #e0e7ec"
+                                                >Zebra</b
+                                            >
+                                        </span>
+                                    </liquid-btn>
+                                    <liquid-btn
+                                        onclick="
+                                            window.location.href =
+                                                'apt-repo://https//winaviation.github.io/repo'
+                                        "
+                                        force-fallback="true"
+                                        responsive="true"
+                                        vw-width="39.22594142259414"
+                                        vh-height="6.276150627615063"
+                                        font-size-percent="48"
+                                    >
+                                        <span class="btn-content-wrapper">
+                                            <img
+                                                class="pm-logo"
+                                                src="/repo/saily.png"
+                                            />
+                                            Add to&thinsp;<b
+                                                style="color: #4998ed"
+                                                >Saily</b
+                                            >
+                                        </span>
+                                    </liquid-btn>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </liquid-glass>
+
+                <div class="bento-right" id="bento-right">
+                    <liquid-glass
+                        flex-center="false"
+                        specular-opacity="0.5"
+                        responsive="true"
+                        vw-width="23.53556485355649"
+                        vh-height="29.81171548117155"
+                        radius-percent="10.52631578947368"
+                        refraction-scale="3"
+                        blur="15"
+                        bezel-width-percent="10.52631578947368"
+                    >
+                        <div class="content side-content">
+                            <h3 class="side-title">
+                                🛠️&ensp;Projects in development
+                            </h3>
+                            <ul class="side-list">
+                                <li>
+                                    <b>Actively worked on:</b>
+                                    <a
+                                        href="https://github.com/winaviation-tweaks/liquidass"
+                                        target="_blank"
+                                        >liquidass</a
+                                    >
+                                </li>
+                                <li>
+                                    <b>Other:</b> nothing big (just personal
+                                    stuff)
+                                </li>
+                            </ul>
+                        </div>
+                    </liquid-glass>
+
+                    <liquid-glass
+                        flex-center="false"
+                        specular-opacity="0.5"
+                        responsive="true"
+                        vw-width="23.53556485355649"
+                        vh-height="29.81171548117155"
+                        radius-percent="10.52631578947368"
+                        refraction-scale="3"
+                        blur="15"
+                        bezel-width-percent="10.52631578947368"
+                    >
+                        <div class="content side-content">
+                            <h3 class="side-title">🌐&ensp;Socials</h3>
+                            <div class="side-text">
+                                You can also find me on:
+                                <br />
+                                <a
+                                    href="https://github.com/winaviation"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-github"></i>
+                                    GitHub</a
+                                ><br />
+                                <a
+                                    href="https://www.reddit.com/user/WinsAviation/"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-reddit"></i>
+                                    Reddit</a
+                                ><br />
+                                <a
+                                    href="https://discord.gg/tjCY4zKQA7"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-discord"></i>
+                                    Discord</a
+                                ><br />
+                                <a
+                                    href="https://x.com/winaviation"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-x-twitter"></i> X
+                                    (Twitter)</a
+                                ><br />
+                                <a
+                                    href="https://www.youtube.com/@winaviation0"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-youtube"></i> YouTube</a
+                                ><br />
+                                <a
+                                    href="https://www.tiktok.com/@winaviation0"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-tiktok"></i> TikTok</a
+                                ><br />
+                                <a
+                                    href="mailto:winaviation0@gmail.com"
+                                    target="_blank"
+                                    ><i
+                                        class="fa-solid fa-envelope"
+                                        aria-hidden="true"
+                                    ></i>
+                                    winaviation0@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                    </liquid-glass>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© dylv 2026 | all rights reserved</p>
+            <a
+                style="text-align: right"
+                href="https://unsplash.com/photos/a-close-up-of-a-palm-leaf-in-the-dark-GZ2fBNgaPG0"
+                target="_blank"
+            >
+                "A close up of a palm leaf in the dark" —
+                <i class="fa-brands fa-unsplash"></i> Ish Consul
+            </a>
+        </footer>
+        <script type="module" src="lg-component.js"></script>
+        <script type="module" src="lg-button-component.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
