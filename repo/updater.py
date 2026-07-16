@@ -10,7 +10,7 @@ import subprocess
 DEBS_DIR = "./debs"
 PACKAGES_FILE = "Packages"
 RELEASE_FILE = "Release"
-REPO_BASE_URL = "https://winaviation.github.io/repo"
+REPO_BASE_URL = "https://droidpro.github.io"
 
 PACKAGE_FIELDS = [
     "Package",
@@ -85,15 +85,15 @@ def write_release():
     now = datetime.datetime.now(datetime.timezone.utc)
     date_str = now.strftime("%a, %d %b %Y %H:%M:%S UTC")
     lines = [
-        "Origin: dylv's repo",
-        "Label: dylv's repo",
+        "Origin: Droidpro repo",
+        "Label: Droidpro repo",
         "Suite: stable",
         "Version: 1.0",
         "Codename: ios",
         f"Date: {date_str}",
         "Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e",
         "Components: main",
-        "Description: my nice lil repo",
+        "Description: Welcome to my Repository!",
         "SHA256:",
     ]
 
