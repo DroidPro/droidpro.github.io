@@ -1,0 +1,43 @@
+Package: droidpro.liqadahh
+Name: 
+Architecture: iphoneos-arm
+Maintainer: droidpro
+Author: droidpro
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/droidpro.liqadahh/icon.png
+Description: Based on dylv tweak , improvements and bugs resolved
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/droidpro.liqadahh/index.json
+Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm.deb
+Size: 1367534
+SHA256: efd435009ad330b190400f909ab73a07d9007b10ef66a90c49b034f5f00d0081
+
+Package: droidpro.liqadahh
+Name: Liquid (Gl)ass
+Version: 0.0.9a
+Architecture: iphoneos-arm64e
+Maintainer: droidpro
+Author: droidpro
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/droidpro.liqadahh/icon.png
+Description: Based on dylv tweak , improvements and bugs resolved
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/droidpro.liqadahh/index.json
+Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64e.deb
+Size: 1367910
+SHA256: cf7a1dfe1d34075fccc7278716e94ceeb18ea781b8088ada50edb70f3cdfa91d
+
+Package: droidpro.liqadahh
+Name: Liqadahh27
+Version: 0.0.9a
+Architecture: iphoneos-arm64
+Maintainer: droidpro
+Author: droidpro
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/droidpro.liqadahh/icon.png
+Description: Based on dylv tweak , improvements and bugs resolved
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/droidpro.liqadahh/index.json
+Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64.deb
+Size: 1368404
+SHA256: 76debe662ea9309d82dfb1171e138586ace8de9ef18b6e9a9e091dc041ecb657
